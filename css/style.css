@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.to-do-container {
+    width: 80%;
+    margin: 5% auto;
+    background-color: darkgreen;
+    color: aliceblue;
+}
+
+ul {
+    margin-top: 10px;
+}
+
+li {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#remove-task {
+    padding-left: 30px;
+}
