@@ -12,14 +12,14 @@
 .to-do-container {
     width: 80%;
     margin: 5% auto;
-    padding: 5px;
+    padding: 10px;
     background-color: darkgreen;
     color: aliceblue;
 }
 
 ul {
     margin-top: 10px;
-    text-decoration: none;
+    list-style-type: none;
 }
 
 li {

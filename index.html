@@ -21,7 +21,7 @@
 
                 <h1>List of TO-DO elements!</h1>
 
-                <input type="text" v-model="insertNewTask">
+                <input type="text" v-model="insertNewTask" @keyUp.enter="insertTodo">
 
                 <button @click="insertTodo">Inserisci task</button>
 
