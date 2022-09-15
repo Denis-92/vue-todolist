@@ -31,9 +31,9 @@
 
                 <ul>
                     <li v-for="(item, index) in todoList">
-                        <del v-if="item.done">{{ item.text }} <span id="remove-task"
-                                @click="removeTask(index)">X</span></del>
-                        <div v-else>{{ item.text }} <span id="remove-task" @click="removeTask(index)">X</span></div>
+                        <del v-if="item.done">{{ item.text }}</del>
+                        <div v-else>{{ item.text }}</div>
+                        <span id="remove-task" @click="removeTask(index)">X</span>
 
                     </li>
                 </ul>
