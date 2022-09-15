@@ -22,8 +22,8 @@ const app = new Vue(
         el: '#app',
 
         data: {
-            todoList: [
 
+            todoList: [
                 {
                     text: 'Lorem',
                     done: false
@@ -44,17 +44,38 @@ const app = new Vue(
                     text: 'amet',
                     done: false
                 }
+            ],
 
-            ]
+            insertNewTask: ''
+
         },
 
         methods: {
+
             removeTask(itemTodo) {
                 const sliceStart = this.todoList.slice(0, itemTodo);
+
                 const sliceEnd = this.todoList.slice(itemTodo + 1);
 
                 this.todoList = [...sliceStart, ...sliceEnd];
+            },
+
+            insertTodo() {
+                const todoInsertTrimmed = this.insertNewTask.trim();
+
+                if (todoInsertTrimmed.length > 0) {
+                    this.todoList.push(
+                        {
+                            text: todoInsertTrimmed,
+                            done: false
+                        }
+                    );
+                    this.insertNewTask = '';
+                } else {
+                    console.log('non è stato aggiunto niente');
+                }
             }
+
         }
     }
 );

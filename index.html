@@ -17,9 +17,18 @@
 
         <div class="container">
 
-            <div class="to-do-container">
+            <div class="add-todo-container">
 
                 <h1>List of TO-DO elements!</h1>
+
+                <input type="text" v-model="insertNewTask">
+
+                <button @click="insertTodo">Inserisci task</button>
+
+            </div>
+
+            <div class="to-do-container">
+
                 <ul>
                     <li v-for="(item, index) in todoList"> {{ item.text }}
                         <span id="remove-task" @click="removeTask(index)">X</span>
