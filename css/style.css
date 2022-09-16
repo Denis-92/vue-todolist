@@ -31,7 +31,9 @@ li>div {
     display: inline-block;
 }
 
-#remove-task {
+#remove-task>* {
     margin-left: 30px;
     background-color: darkblue;
+    color: white;
+    padding: 5px;
 }

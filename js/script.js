@@ -74,6 +74,10 @@ const app = new Vue(
                 } else {
                     console.log('non è stato aggiunto niente');
                 }
+            },
+
+            changeTodo(receiveTask) {
+                receiveTask.done = !receiveTask.done;
             }
 
         }
